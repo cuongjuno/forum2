@@ -28,7 +28,7 @@ const register = async (req, res, next) => {
     })
     .catch(err => {
         console.log(err);
-        res.send(create_res.sendError(500,mess.errorCodes.INTERNAL_SERVER_ERROR,err))
+        res.send(create_res.sendError())
     })
 }
 
